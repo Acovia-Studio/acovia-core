@@ -1,0 +1,45 @@
+{
+    "description": {"text":"Wither_magic","color":"#af00af"},
+    "anvil_cost": 5,
+    "max_level": 1,
+    "weight": 1,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first":10
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first":12
+    },
+    "supported_items": [
+        "minecraft:stick"
+    ],
+    "primary_items": [],
+    "slots": [
+        "mainhand"
+    ],
+    "exclusive_set": [
+        "acovia:damage_magic",
+        "acovia:fireball_magic",
+        "acovia:control_ai"
+    ],
+    "effects": {
+        "minecraft:post_piercing_attack": [
+            {
+                "effect":{
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "apply_exhaustion",
+                            "amount": 2
+                        },
+                        {
+                            "type": "run_function",
+                            "function": "acovia:enchantment/wither_magic"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
