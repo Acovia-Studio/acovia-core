@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        "beacon",
+        "conduit"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:beacon",
+        "components": {
+            "item_name":{"text":"潮涌信标","color":"aqua"},
+            "lore": [{"text":"激活可生成一片庇护区域，仅限放置一次，破坏后掉落普通信标"}],
+            "minecraft:block_entity_data":{
+                "id":"minecraft:beacon",
+                "primary_effect":"minecraft:conduit_power"
+            }
+        }
+    }
+}
